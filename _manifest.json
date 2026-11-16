@@ -5,12 +5,15 @@
   "name": "Breeze 积分助手",
   "description": "为 BreezeBlue 自动领取每日积分，支持云服务器与本地部署。自动识别运行环境，云端在配置页导入登录态，无需浏览器；本地可用 Edge 登录，支持余额查询、定时领取和失败重试。",
   "author": {
-    "name": "mi-tuan",
-    "url": "https://github.com/mi-tuan"
+    "name": "CharQin",
+    "url": "https://github.com/CharQin"
   },
   "license": "MIT",
   "urls": {
-    "repository": "https://github.com/mi-tuan/dsh-breeze-claim"
+    "repository": "https://github.com/CharQin/maibot-breeze-points",
+    "homepage": "https://github.com/CharQin/maibot-breeze-points",
+    "documentation": "https://github.com/CharQin/maibot-breeze-points/blob/main/README.md",
+    "issues": "https://github.com/CharQin/maibot-breeze-points/issues"
   },
   "host_application": {
     "min_version": "1.3.19",

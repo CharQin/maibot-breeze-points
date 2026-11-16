@@ -27,6 +27,9 @@ Breeze 积分助手
 
 | 字段 | 内容 |
 | --- | --- |
+| 插件 ID | `mi-tuan.breeze-claim` |
+| 作者 | `CharQin` |
+| 仓库 | `https://github.com/CharQin/maibot-breeze-points` |
 | 类别 | 自动化（`automation`） |
 | 版本 | `1.0.4` |
 | 许可证 | MIT |
@@ -34,3 +37,5 @@ Breeze 积分助手
 | 列表摘要 | 使用上方“列表短介绍” |
 | 完整文档 | `README.md` |
 | 更新日志 | `CHANGELOG.md` |
+
+提交时使用官方 **Add Plugin / 添加插件** Issue 模板，填写清单中的插件 ID 与实际发布仓库地址。先完成 [发布步骤](PUBLISHING.md)，本文件的关键词和介绍用于页面文案，不作为额外字段加入清单。

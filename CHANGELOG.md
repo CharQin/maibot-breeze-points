@@ -2,6 +2,9 @@
 
 ## 1.0.4
 
+- 发布信息更新为维护者 CharQin 和 maibot-breeze-points 仓库，保留现有插件 ID 及上游 MIT 版权。
+- 调整发布源码目录，使清单、入口和许可证直接位于仓库根目录；补充 GitHub Release 与插件市场提交流程。
+- 更新源码包安装说明和验证记录，保留上游来源与 MIT 版权声明。
 - 新增 auto / server / desktop 部署模式，自动识别 Linux 无桌面、SSH 和 Windows 服务环境。
 - 云服务器和 Docker 跳过浏览器准备，查询、领取及登录态验证不需要 Edge 或 Chromium。
 - 配置页新增会话 Cookie 输入和“导入登录态”按钮，支持会话值、Cookie 头及旧版 Cookie JSON。

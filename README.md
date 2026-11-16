@@ -2,11 +2,13 @@
 
 为 MaiBot 添加 BreezeBlue 每日积分自动领取、余额查询和手动领取，支持云服务器与本地部署。由 [dsh-breeze-claim](https://github.com/mi-tuan/dsh-breeze-claim) 适配而来。
 
+由 [CharQin](https://github.com/CharQin) 维护，发布仓库为 [maibot-breeze-points](https://github.com/CharQin/maibot-breeze-points)。
+
 ## 安装
 
 适用于 **MaiBot 1.3.19～1.4.x / SDK 2.20～2.23**。
 
-1. 将 `breeze_claim_plugin` 文件夹放入 MaiBot 的 `plugins/` 目录，重启或重载插件。
+1. 下载 GitHub Release 的源码包或插件安装包，将包含 `_manifest.json` 和 `plugin.py` 的目录命名为 `breeze_claim_plugin`，放入 MaiBot 的 `plugins/` 目录，重启或重载插件。
 2. MaiBot 自动安装 Python 依赖。打开 **插件管理 → Breeze 积分助手 → 配置**，按下面的方式登录。
 
 升级时替换插件文件，保留原有 `config.toml` 和插件数据目录，然后重启 MaiBot。
@@ -56,3 +58,13 @@
 - **本地看不到登录按钮**：将部署模式设为 `desktop`；MaiBot 必须在有图形桌面的用户会话中运行。
 - **导入失败**：确认复制的是 `breeze_blue_session` 的完整值、已保存配置，且服务器可以访问 Breeze；登录过期后重新复制。
 - **没有自动领取**：检查两个启用开关、领取时间和“最近操作”。
+
+## 开发与发布
+
+本仓库根目录即插件根目录，`_manifest.json`、`plugin.py` 和 `LICENSE` 位于同一层。运行配置由 MaiBot 自动生成；仓库仅提供 `config.example.toml`，请勿提交填写过 Cookie 的配置或运行数据。
+
+发布步骤和插件市场提交说明见 [PUBLISHING.md](PUBLISHING.md)，离线验证范围见 [VALIDATION.md](VALIDATION.md)。
+
+## 来源与许可证
+
+本插件由 [dsh-breeze-claim](https://github.com/mi-tuan/dsh-breeze-claim) 的功能适配而来，采用 [MIT 许可证](LICENSE)，保留上游版权声明。
