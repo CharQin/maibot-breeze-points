@@ -1,0 +1,13 @@
+/config.toml
+/cookies.json
+/schedule.json
+/operation.lock
+/profile/
+/data/
+/breeze-login/
+/.venv/
+/.pytest_cache/
+/.ruff_cache/
+**/__pycache__/
+*.py[cod]
+*.log

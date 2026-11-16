@@ -1,0 +1,2 @@
+-r requirements.txt
+# 兼容旧版安装命令；Playwright 已并入标准依赖，由 MaiBot 自动安装。

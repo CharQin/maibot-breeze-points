@@ -1,0 +1,28 @@
+# 示例文件。首次加载由 MaiBot Runner 生成 config.toml；请在 WebUI 中保存配置。
+# 所有时间均按 schedule.timezone 执行。请勿分享填写过 Cookie 的配置文件。
+
+[plugin]
+config_version = "1.0.2" # 配置结构版本，请勿手动修改。
+enabled = true # 插件总开关。
+
+[schedule]
+enabled = true # 开启每日自动领取。
+claim_time = "08:10" # 每日领取时间，严格 HH:MM。
+timezone = "Asia/Shanghai" # IANA 时区，默认北京时间。
+reset_time = "08:00" # 服务端未返回下次重置时间时的周期边界。
+poll_interval_seconds = 60 # 检查间隔，15～3600 秒。
+max_attempts = 3 # 每个周期最多自动尝试 1～10 次。
+retry_interval_seconds = 900 # 失败重试间隔，60～86400 秒。
+
+[account]
+deployment_mode = "auto" # auto 自动检测；server 云服务器/Docker；desktop 有图形桌面的本地电脑。
+session_cookie = "" # 本地浏览器登录后复制 breeze_blue_session 的值；保存后点击「导入登录态」。也接受 Cookie 头/JSON。
+auto_install_browser = true # 仅桌面模式自动准备浏览器；服务器模式跳过。Edge 不下载 Chromium。
+browser_channel = "msedge" # 仅桌面模式生效；msedge / chrome / chromium。
+login_timeout_seconds = 300 # 人工登录等待时限，30～600 秒。
+auto_refresh = true # 仅桌面模式：有 profile 时尝试无头刷新。服务器 Cookie 过期需重新导入。
+request_timeout_seconds = 30 # HTTP 请求超时，5～120 秒。
+
+[commands]
+enabled = false # 默认不开放聊天命令；配置页按钮仍可使用。
+allowed_users = [] # 格式 ["qq:123456789"]；空列表拒绝所有聊天操作。
